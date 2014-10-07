@@ -1,0 +1,39 @@
+[data-ad-slot] {
+  display: none !important;
+}
+
+@-moz-document domain(youtube.com) {
+  #results [class|=pyv] {
+    display: none;
+  }
+}
+
+@-moz-document domain(facebook.com) {
+  /* Remove unecessary stuff */
+  #pagelet_side_ads,
+  #rightCol,
+  #leftCol,
+  .fbTimelineUnit {
+    display: none !important;
+  }
+
+  /* Make content area wide */
+  #contentArea {
+    width: 100% !important;
+  }
+
+  /* Center images */
+  .mtm div a,
+  uiScaledImageContainer {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  #contentCol,
+  .fbTimelineCapsule {
+    float: left !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+}
